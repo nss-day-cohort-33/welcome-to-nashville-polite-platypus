@@ -5,16 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Welcome to Nashville!</h1>
     <h2>Search for Stuff to do...</h2>
 <div>
     <fieldset>
-        <input type="text" placeholder="parks by feature">
+        <select id="parkSearch">
+            <option>Park Features...</option>
+            <option value="swimming_pool">Swimming Pool</option>
+            <option value="playground">Playground</option>
+            <option value="dog_park">Dog Park</option>
+            <option value="community_center">Community Center</option>
+            <option value="walk_jog_paths">Walking Path</option>
+            <option value="restrooms_available">Restrooms</option>
+            <option value="historic_features">Historic Features</option>
+        </select>
         <button id="place-search">search</button>
-    </fieldset>
+</fieldset>
 
     <fieldset>
         <input id="cuisine-input" type="text" placeholder="restaurants by food type">
@@ -22,8 +31,8 @@
     </fieldset>
 
     <fieldset>
-        <input type="text" placeholder="meetups by topic">
-        <button id="meetups-search">search</button>
+        <input  id="meetup-topic" type="text" placeholder="meetups by topic">
+        <button id="meetups-search-btn">search</button>
     </fieldset>
 
     <fieldset>
@@ -43,12 +52,11 @@
     <section id="concert-itinerary">Concert</section>
 </div>
     <script src="Scripts/keys.js"></script>
-    <!-- <script src="Scrips/main.js"></script> -->
-    <!-- <script src="Scripts/concerts_API.js"></script>
+    <script src="Scripts/key_templates.js"></script> 
+    <script src="Scripts/concerts_API.js"></script>
     <script src="Scripts/meetups_API.js"></script>
-    <script src="Scripts/parks_API.js"></script> -->
+    <script src="Scripts/parks_API.js"></script> 
     <script src="Scripts/restaurant_API.js"></script>
-    <!-- <script src="Scripts/key_templates.js"></script> -->
-
+    <script src="Scrips/main.js"></script>
 </body>
 </html>
