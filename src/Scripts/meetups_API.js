@@ -13,7 +13,7 @@ function eventFind (eventSearch) {
       `
       <div id=results${i}>
       <p><a target="_blank" href=${events.events[i].url}>${events.events[i].name.html}</a></p>
-      <button class="saveButton" id="save_meetup-${i}">Save</button>
+      <button class="meetupSaveButton" id="save_meetup-${i}">Save</button>
       </div>
       `
     }    
@@ -41,11 +41,11 @@ meetupSearch.addEventListener("click", function () {
 //event listener for save button that will add search result to itinerary
 let meetupSearchResults = []
 
-let saveButton = document.getElementById("search-results");
-saveButton.addEventListener("click", function(){
+let meetupSaveButton = document.getElementById("search-results");
+meetupSaveButton.addEventListener("click", function(){
   //  console.log(event.target)
 
-   if (event.target.classList.contains("saveButton")) {
+   if (event.target.classList.contains("meetupSaveButton")) {
     //  console.log("works")
    console.log(event.target.id.slice(-1))
   //  console.log(event)
