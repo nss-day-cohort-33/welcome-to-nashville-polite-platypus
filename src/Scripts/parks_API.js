@@ -1,6 +1,6 @@
 
 function parkfind(parksearch) {
-    fetch(`https://data.nashville.gov/resource/xbru-cfzi.json?${parksearch}=Yes&$$app_token=${park_app_keys.APP_TOKEN}`)
+    fetch(`https://data.nashville.gov/resource/xbru-cfzi.json?${parksearch}=Yes&$$app_token=${api_keys.park_APP_TOKEN}`)
     .then(parkData => parkData.json())
     .then( parks => {
         searchResults = parks
