@@ -1,5 +1,3 @@
-// if you are working with the Parks API and are having a hard time accessing the address for the park, try changing `74d7-b74t.json` to `.json` in your fetch request
-
 
 function parkfind(parksearch) {
     fetch(`https://data.nashville.gov/resource/xbru-cfzi.json?${parksearch}=Yes&$$app_token=${park_app_keys.APP_TOKEN}`)
