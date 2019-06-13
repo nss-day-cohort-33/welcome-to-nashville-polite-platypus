@@ -1,2 +1,6 @@
 keys.js
 .DS_Store
+
+// var str = "some_sample_text_here.";
+// var newStr = str.replace(/_/g , "");
+// console.log ('Text without underscores : ' + newStr);
