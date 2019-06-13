@@ -11,16 +11,16 @@ function getMyConcert(concertGenres){
             {
                 putInDOM = `<p${i}-content> ${concertName}</p>
                 <p>Click <a target="_blank" href=${concertUrl}>here</a> for concert details.</p>
-                <button class="saveButton" id="save_meetup-${i}">Save</button>`
+                <button class="concertSaveButton" id="save_meetup-${i}">Save</button>`
             }
             document.querySelector("#search-results").innerHTML += putInDOM
     }
 
-    let saveButton = document.getElementById("search-results");
-    saveButton.addEventListener("click", function(){
+    let concertSaveButton = document.getElementById("search-results");
+    concertSaveButton.addEventListener("click", function(){
         // console.log("concert name", event.target)
 
-    if (event.target.classList.contains("saveButton")) {
+    if (event.target.classList.contains("concertSaveButton")) {
     console.log(event.target.id.slice(-1))
     let saveItem = concertArray[+event.target.id.slice(-1)].name
     let itineraryDOM = document.getElementById("concert-itinerary")
