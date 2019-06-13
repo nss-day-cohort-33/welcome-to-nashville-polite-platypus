@@ -24,39 +24,48 @@
         </select>
         <button id="place-search">search</button>
       </fieldset>
+      
+    <fieldset>
+        <input id="cuisine-input" type="text" placeholder="restaurants by food type">
+        <button id="restaurant-search">search</button>
+    </fieldset>
 
-      <fieldset>
-       <input id="cuisine-input" type="text" placeholder="restaurants by food type">
-       <button id="restaurant-search">search</button>
-      </fieldset>
+    <fieldset>
+        <input  id="meetup-topic" type="text" placeholder="meetups by topic">
+        <button id="meetups-search-btn">search</button>
+    </fieldset>
 
-      <fieldset>
-            <input  id="meetup-topic" type="text" placeholder="meetups by topic">
-            <button id="meetups-search-btn">search</button>
-        </fieldset>
-
-      <fieldset>
-        <input type="text" placeholder="concerts by genre" />
+    <fieldset>
+        <select id="concertSearch">
+            <option>Concert Genres...</option>
+            <option value="KnvZfZ7vAeA">Rock</option>
+            <option value="KnvZfZ7vAev">Pop</option>
+            <option value="KnvZfZ7vAv6">Country</option>
+            <option value="KnvZfZ7vAee">R&B</option>
+            <option value="KnvZfZ7vAvt">Metal</option>
+            <option value="KnvZfZ7vAvl">Other</option>
+        </select>
         <button id="concerts-search">search</button>
-      </fieldset>
-    </div>
-
+    </fieldset>
+</div>
+  
     <h2>Results</h2>
     <section id="search-results"></section>
 
-    <h2>My Itinerary</h2>
-    <div id="itinerary">
-      <section id="park-itinerary">Park</section>
-      <section id="restaurant-itinerary">Restaurant</section>
-      <section id="meetup-itinerary">Meetup</section>
-      <section id="concert-itinerary">Concert</section>
-    </div>
+<h2>My Itinerary</h2>
+<div id="itinerary">
+    <section id="park-itinerary">Park</section>
+    <section id="restaurant-itinerary">Restaurant</section>
+    <section id="meetup-itinerary">Meetup</section>
+    <section id="concert-itinerary">Concert</section>
+</div>
     <script src="Scripts/keys.js"></script>
-    <script src="Scripts/key_templates.js"></script> 
-    <!-- <script src="Scripts/concerts_API.js"></script>
-    <script src="Scripts/meetups_API.js"></script> -->
+    <script src="Scripts/key_templates.js"></script>
+    <script src="Scripts/concerts_API.js"></script>
+    <script src="Scripts/meetups_API.js"></script>
     <script src="Scripts/parks_API.js"></script>
-    <!-- <script src="Scripts/restaurant_API.js"></script>
-    <script src="Scripts/main.js"></script> -->
-  </body>
+    <script src="Scripts/restaurant_API.js"></script>
+    <script src="main.js"></script>
+</body>
 </html>
+
